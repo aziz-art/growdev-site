@@ -1,0 +1,14 @@
+{
+  "name": "growdev-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GrowDev portfolio: static, trilingual (fr / ar / en), no runtime dependencies.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "check": "node tools/check.mjs",
+    "serve": "python3 -m http.server 8080 --directory site",
+    "og": "node tools/make-og.cjs"
+  }
+}

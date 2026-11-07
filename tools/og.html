@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>GrowDev OG image</title>
+<!-- Social share image (1200x630). Open with ?lang=fr|ar|en. tools/make-og.js renders the three images. -->
+<style>
+@font-face{font-family:Sora;src:url("../site/assets/fonts/sora-latin-wght.woff2");font-weight:100 800}
+@font-face{font-family:"IBM Plex Mono";src:url("../site/assets/fonts/ibm-plex-mono-latin-400.woff2");font-weight:400}
+@font-face{font-family:"IBM Plex Sans Arabic";src:url("../site/assets/fonts/plex-arabic-400.woff2");font-weight:400 500}
+@font-face{font-family:"IBM Plex Sans Arabic";src:url("../site/assets/fonts/plex-arabic-700.woff2");font-weight:600 800}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1200px;height:630px;position:relative;overflow:hidden;background:#020b18;color:#f2f6fa;font-family:Sora,"IBM Plex Sans Arabic",sans-serif}
+.bg{position:absolute;inset:0;background:radial-gradient(60% 90% at 95% 0%,rgba(0,186,252,.28),transparent 70%),radial-gradient(55% 80% at 0% 100%,rgba(47,229,106,.2),transparent 70%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(120,170,220,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(120,170,220,.07) 1px,transparent 1px);background-size:60px 60px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 90%);mask-image:linear-gradient(180deg,transparent,#000 90%)}
+.bars{position:absolute;right:56px;bottom:0;display:flex;align-items:flex-end;gap:16px;height:330px;direction:ltr}
+.bars i{display:block;width:46px;border:1px solid rgba(47,229,106,.35);border-bottom:0;border-top:3px solid #2fe56a;border-radius:5px 5px 0 0;background:linear-gradient(180deg,rgba(47,229,106,.45),rgba(0,186,252,.04))}
+.arrow{position:absolute;right:40px;bottom:70px;width:430px;height:360px}
+.emb{position:absolute;left:64px;top:150px;width:330px;height:330px;border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.18),0 30px 90px -20px rgba(47,229,106,.55)}
+.copy{position:absolute;left:450px;top:150px;width:520px}
+.eyebrow{font:400 20px "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:#2fe56a}
+h1{margin-top:18px;font:700 74px/1.02 Sora,sans-serif;letter-spacing:-.045em}
+h1 em{font-style:normal;background:linear-gradient(100deg,#2fe56a,#10ce97 48%,#00bafc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin-top:26px;font:400 25px/1.4 Sora,sans-serif;color:#b9c6d3;letter-spacing:-.01em}
+.url{position:absolute;left:64px;bottom:44px;font:400 24px "IBM Plex Mono",monospace;color:#8fa2b5;letter-spacing:.04em;direction:ltr}
+.url b{color:#f2f6fa;font-weight:400}
+
+/* Arabic: the text side and the emblem swap sides, the growth chart keeps its drawing (as on the site) */
+body.rtl .bg{background:radial-gradient(60% 90% at 5% 0%,rgba(0,186,252,.28),transparent 70%),radial-gradient(55% 80% at 100% 100%,rgba(47,229,106,.2),transparent 70%)}
+body.rtl .bars{right:auto;left:56px}
+body.rtl .arrow{right:auto;left:30px;width:380px;height:318px}
+body.rtl .emb{left:auto;right:64px}
+body.rtl .copy{left:auto;right:450px;width:410px;direction:rtl;text-align:right}
+body.rtl .url{left:auto;right:64px}
+body.rtl .eyebrow{font:500 25px Sora,"IBM Plex Sans Arabic",sans-serif;letter-spacing:0;text-transform:none}
+body.rtl h1{margin-top:14px;font:700 104px/1.22 "IBM Plex Sans Arabic",Sora,sans-serif;letter-spacing:0}
+body.rtl .sub{margin-top:22px;font:400 29px/1.6 "IBM Plex Sans Arabic",Sora,sans-serif;letter-spacing:0}
+</style></head>
+<body>
+<div class="bg"></div><div class="grid"></div>
+<div class="bars"><i style="height:110px"></i><i style="height:156px"></i><i style="height:204px"></i><i style="height:252px"></i><i style="height:296px"></i></div>
+<svg class="arrow" viewBox="0 0 430 360"><defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#00bafc"/><stop offset=".55" stop-color="#10ce97"/><stop offset="1" stop-color="#7dffa5"/></linearGradient></defs>
+<path d="M0 330 C70 300 120 250 170 214 S300 120 380 52" fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="round"/><path d="M366 30 L416 14 L402 66 L394 46 Z" fill="#7dffa5"/></svg>
+<img class="emb" src="../site/assets/img/emblem-640.webp" alt="">
+<div class="copy"><p class="eyebrow" id="eyebrow"></p><h1 id="h1"></h1><p class="sub" id="sub"></p></div>
+<p class="url"><b>growdev</b>.werchti.tn</p>
+<script>
+// Same wording as the site (hero.l1 / hero.l2 / meta description)
+var T = {
+  fr: { eyebrow: "ERP Odoo · Web · Mobile", h1: "Votre <em>croissance,</em><br>notre code.", sub: "Transformation digitale, sites web, boutiques en ligne et automatisation." },
+  en: { eyebrow: "Odoo ERP · Web · Mobile", h1: "Your <em>growth,</em><br>our code.", sub: "Digital transformation, websites, eCommerce and automation." },
+  ar: { eyebrow: "Odoo ERP · الويب · الجوال", h1: "<em>نموّكم،</em><br>برمجتنا.", sub: "التحول الرقمي ومواقع الويب والتجارة الإلكترونية والأتمتة." }
+};
+var lang = new URLSearchParams(location.search).get("lang") || "fr";
+if (!T[lang]) lang = "fr";
+document.documentElement.lang = lang;
+if (lang === "ar") { document.documentElement.dir = "rtl"; document.body.classList.add("rtl"); }
+document.getElementById("eyebrow").textContent = T[lang].eyebrow;
+document.getElementById("h1").innerHTML = T[lang].h1;
+document.getElementById("sub").textContent = T[lang].sub;
+</script>
+</body></html>

@@ -1,0 +1,25 @@
+# GrowDev — everyone is welcome, including search engines and AI assistants.
+User-agent: *
+Allow: /
+
+# AI assistants that answer questions with live web results
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Applebot
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+Allow: /
+
+# AI crawlers used for model training (allowed; move them under Disallow to opt out)
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://growdev.werchti.tn/sitemap.xml

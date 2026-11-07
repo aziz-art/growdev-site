@@ -1,0 +1,22 @@
+{
+  "url": "https://growdev.werchti.tn",
+  "name": "GrowDev",
+  "email": "contact@werchti.tn",
+  "founder": "Aziz Chaibi",
+  "xDefault": "en",
+  "sameAs": ["https://github.com/aziz-art"],
+  "langs": [
+    { "code": "fr", "dir": "ltr", "path": "/", "label": "FR", "name": "Français", "nativeName": "GrowDev en français", "englishName": "French", "ogLocale": "fr_FR" },
+    { "code": "ar", "dir": "rtl", "path": "/ar/", "label": "عربي", "name": "العربية", "nativeName": "GrowDev بالعربية", "englishName": "Arabic", "ogLocale": "ar_AR" },
+    { "code": "en", "dir": "ltr", "path": "/en/", "label": "EN", "name": "English", "nativeName": "GrowDev in English", "englishName": "English", "ogLocale": "en_US" }
+  ],
+  "preload": {
+    "fr": ["sora-latin-wght", "ibm-plex-sans-latin-wght"],
+    "en": ["sora-latin-wght", "ibm-plex-sans-latin-wght"],
+    "ar": ["sora-latin-wght", "plex-arabic-400", "plex-arabic-700"]
+  },
+  "runtimeKeys": {
+    "prefixes": ["mod.", "hint.", "sum.", "phase.", "brief.", "curfmt."],
+    "exact": ["comp.hint", "sim.pct", "sim.h", "sim.list"]
+  }
+}

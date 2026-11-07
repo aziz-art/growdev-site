@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}"{{entryAttrs}}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+{{hreflang}}
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="author" content="GrowDev">
+<meta name="geo.region" content="TN">
+<meta name="geo.placename" content="Tunisia">
+<meta name="theme-color" content="#020b18">
+<meta name="color-scheme" content="dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GrowDev">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{ogImage}}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ogAlt}}">
+<meta property="og:locale" content="{{ogLocale}}">
+{{ogAlternates}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{description}}">
+<meta name="twitter:image" content="{{ogImage}}">
+<meta name="twitter:image:alt" content="{{ogAlt}}">
+<link rel="icon" href="{{base}}favicon.ico" sizes="48x48">
+<link rel="icon" href="{{base}}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{base}}assets/img/apple-touch-icon.png">
+<link rel="manifest" href="{{base}}site.webmanifest">
+<link rel="sitemap" type="application/xml" href="{{base}}sitemap.xml">
+{{preload}}
+<link rel="stylesheet" href="{{base}}assets/css/styles.css">
+<script src="{{base}}assets/js/boot.js"></script>
+<script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="skip"></a>
+
+<header class="site-header" id="top">
+  <div class="wrap bar-row">
+    <a class="brand" href="#top" aria-label="GrowDev, haut de page" data-i18n-attr="aria-label:brand.aria">
+      <img src="{{base}}assets/img/emblem-96.webp" width="40" height="40" alt="">
+      <span class="brand-word">Grow<span>Dev</span></span>
+    </a>
+    <nav class="nav" id="menu" aria-label="Navigation principale" data-i18n-attr="aria-label:nav.aria">
+      <a href="#services" data-i18n="nav.services"></a>
+      <a href="#composer" data-i18n="nav.composer"></a>
+      <a href="#methode" data-i18n="nav.method"></a>
+      <a href="#simulateur" data-i18n="nav.sim"></a>
+      <a href="#about" data-i18n="nav.about"></a>
+      <a class="nav__cta" href="#contact" data-i18n="nav.cta"></a>
+    </nav>
+    <div class="header-tools">
+      <div class="lang" role="group" aria-label="" data-i18n-attr="aria-label:lang.aria" translate="no">{{langLinks}}</div>
+      <a class="btn btn-primary btn-sm" href="#contact" data-i18n="nav.cta"></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu" data-i18n-attr="aria-label:menu.aria"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <canvas class="hero__fx" id="fx" aria-hidden="true"></canvas>
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+      <h1 id="hero-title">
+        <span class="ln" style="--i:0"><span data-i18n="hero.l1"></span></span>
+        <span class="ln" style="--i:1"><span><span data-i18n="hero.l2"></span><span class="caret" aria-hidden="true"></span></span></span>
+      </h1>
+      <p class="hero__lead" data-i18n="hero.lead"></p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="#contact"><span data-i18n="hero.cta1"></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost btn-lg" href="#services" data-i18n="hero.cta2"></a>
+      </div>
+      <p class="hero__note">
+        <span data-i18n="hero.n1"></span>
+        <span data-i18n="hero.n2"></span>
+        <span data-i18n="hero.n3"></span>
+      </p>
+    </div>
+
+    <div class="growth" role="group" aria-label="Nos services sous forme de graphique de croissance" data-i18n-attr="aria-label:hero.chart.aria">
+      <ul class="growth__bars" id="growth-bars">
+        <li style="--i:0;--h:.36"><a class="bar" href="#svc-digital"><span class="bar__label" data-i18n="bar.digital"></span><span class="bar__tip" data-i18n="bar.digital.tip"></span></a></li>
+        <li style="--i:1;--h:.47"><a class="bar" href="#svc-odoo"><span class="bar__label">Odoo ERP</span><span class="bar__tip" data-i18n="bar.odoo.tip"></span></a></li>
+        <li style="--i:2;--h:.58"><a class="bar" href="#svc-web"><span class="bar__label" data-i18n="bar.web"></span><span class="bar__tip" data-i18n="bar.web.tip"></span></a></li>
+        <li style="--i:3;--h:.69"><a class="bar" href="#svc-wp"><span class="bar__label">WordPress</span><span class="bar__tip" data-i18n="bar.wp.tip"></span></a></li>
+        <li style="--i:4;--h:.79"><a class="bar" href="#svc-shop"><span class="bar__label">PrestaShop</span><span class="bar__tip" data-i18n="bar.shop.tip"></span></a></li>
+        <li style="--i:5;--h:.90"><a class="bar" href="#svc-mobile"><span class="bar__label" data-i18n="bar.mobile"></span><span class="bar__tip" data-i18n="bar.mobile.tip"></span></a></li>
+      </ul>
+      <svg class="growth__arrow" id="growth-arrow" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="gd-arrow-grad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#00bafc"/><stop offset=".55" stop-color="#10ce97"/><stop offset="1" stop-color="#7dffa5"/></linearGradient></defs>
+        <path class="arrow__path" d=""/><path class="arrow__head" d=""/>
+      </svg>
+      <div class="coins" aria-hidden="true">
+        <span class="coin" style="--k:0"></span><span class="coin" style="--k:1"></span><span class="coin" style="--k:2"></span><span class="coin" style="--k:3"></span><span class="coin" style="--k:4"></span>
+        <span class="coin-face" data-i18n="coin"></span>
+      </div>
+      <p class="growth__hint" data-i18n="hero.hint"></p>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" role="region" aria-label="Technologies que nous utilisons" data-i18n-attr="aria-label:tech.aria">
+  <div class="marquee__track">
+    <ul class="marquee__set">
+      <li>Odoo</li><li>Python</li><li>PostgreSQL</li><li>Docker</li><li>Nginx</li><li>Django</li><li>JavaScript</li><li>WordPress</li><li>PrestaShop</li><li>Flutter</li><li>Git</li><li>Linux</li>
+    </ul>
+    <ul class="marquee__set" aria-hidden="true">
+      <li>Odoo</li><li>Python</li><li>PostgreSQL</li><li>Docker</li><li>Nginx</li><li>Django</li><li>JavaScript</li><li>WordPress</li><li>PrestaShop</li><li>Flutter</li><li>Git</li><li>Linux</li>
+    </ul>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+
+<section class="section" id="services" aria-labelledby="svc-title">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow" data-i18n="svc.eyebrow"></p>
+      <h2 class="h2" id="svc-title" data-i18n="svc.title"></h2>
+      <p class="lead" data-i18n="svc.lead"></p>
+    </div>
+
+    <div class="svc-grid">
+      <article class="svc svc--lg" id="svc-odoo" data-reveal>
+        <div class="svc__top"><span class="svc__no">01</span>
+          <svg class="art" viewBox="0 0 132 84" aria-hidden="true" focusable="false"><rect class="tile f" style="--i:0" x="6" y="10" width="34" height="26" rx="5"/><rect class="tile f2" style="--i:1" x="49" y="10" width="34" height="26" rx="5"/><rect class="tile fv" style="--i:2" x="92" y="10" width="34" height="26" rx="5"/><rect class="tile f2" style="--i:3" x="6" y="46" width="34" height="26" rx="5"/><rect class="tile f" style="--i:4" x="49" y="46" width="34" height="26" rx="5"/><rect class="tile fg" style="--i:5" x="92" y="46" width="34" height="26" rx="5"/></svg></div>
+        <h3 data-i18n="svc.odoo.t"></h3>
+        <p class="svc__pitch" data-i18n="svc.odoo.p"></p>
+        <ul class="checks">
+          <li data-i18n="svc.odoo.c1"></li>
+          <li data-i18n="svc.odoo.c2"></li>
+          <li data-i18n="svc.odoo.c3"></li>
+          <li data-i18n="svc.odoo.c4"></li>
+          <li data-i18n="svc.odoo.c5"></li>
+          <li data-i18n="svc.odoo.c6"></li>
+          <li data-i18n="svc.odoo.c7"></li>
+        </ul>
+        <ul class="tags" aria-label="Technologies" data-i18n-attr="aria-label:tags.aria"><li>Odoo</li><li>Python</li><li>PostgreSQL</li><li>Docker</li></ul>
+        <a class="svc__cta" href="#composer" data-pick="sales"><span data-i18n="svc.odoo.cta"></span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+
+      <article class="svc svc--md" id="svc-digital" data-reveal style="--d:1">
+        <div class="svc__top"><span class="svc__no">02</span>
+          <svg class="art" viewBox="0 0 132 84" aria-hidden="true" focusable="false"><path class="s2 flow" d="M10 66 L40 40 L72 52 L104 22 L124 30" stroke-dasharray="4 10"/><circle class="node f" style="--i:0" cx="10" cy="66" r="5"/><circle class="node f2" style="--i:1" cx="40" cy="40" r="5"/><circle class="node f" style="--i:2" cx="72" cy="52" r="5"/><circle class="node fg" style="--i:3" cx="104" cy="22" r="6"/><circle class="node f2" style="--i:4" cx="124" cy="30" r="4"/></svg></div>
+        <h3 data-i18n="svc.digital.t"></h3>
+        <p class="svc__pitch" data-i18n="svc.digital.p"></p>
+        <ul class="checks">
+          <li data-i18n="svc.digital.c1"></li>
+          <li data-i18n="svc.digital.c2"></li>
+          <li data-i18n="svc.digital.c3"></li>
+          <li data-i18n="svc.digital.c4"></li>
+        </ul>
+        <a class="svc__cta" href="#composer" data-pick="audit"><span data-i18n="svc.digital.cta"></span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+
+      <article class="svc" id="svc-web" data-reveal>
+        <div class="svc__top"><span class="svc__no">03</span>
+          <svg class="art" viewBox="0 0 132 84" aria-hidden="true" focusable="false"><rect class="s2" x="4" y="6" width="124" height="72" rx="6"/><path class="s2 dim" d="M4 22h124"/><circle class="f" cx="14" cy="14" r="2.4"/><circle class="fg" cx="22" cy="14" r="2.4"/><circle class="f2" cx="30" cy="14" r="2.4"/><rect class="ln f" style="--i:0" x="14" y="32" width="60" height="5" rx="2.5"/><rect class="ln f2" style="--i:1" x="22" y="43" width="82" height="5" rx="2.5"/><rect class="ln f" style="--i:2" x="22" y="54" width="46" height="5" rx="2.5"/><rect class="ln fv" style="--i:3" x="14" y="65" width="70" height="5" rx="2.5"/></svg></div>
+        <h3 data-i18n="svc.web.t"></h3>
+        <p class="svc__pitch" data-i18n="svc.web.p"></p>
+        <ul class="checks">
+          <li data-i18n="svc.web.c1"></li>
+          <li data-i18n="svc.web.c2"></li>
+          <li data-i18n="svc.web.c3"></li>
+          <li data-i18n="svc.web.c4"></li>
+        </ul>
+        <ul class="tags"><li>Python</li><li>Django</li><li>JavaScript</li></ul>
+        <a class="svc__cta" href="#composer" data-pick="webapp"><span data-i18n="svc.cta"></span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+
+      <article class="svc" id="svc-wp" data-reveal style="--d:1">
+        <div class="svc__top"><span class="svc__no">04</span>
+          <svg class="art" viewBox="0 0 132 84" aria-hidden="true" focusable="false"><rect class="blk f2" style="--i:0" x="8" y="6" width="116" height="12" rx="3"/><rect class="blk f" style="--i:1" x="8" y="24" width="116" height="26" rx="3"/><rect class="blk fg" style="--i:2" x="8" y="56" width="55" height="22" rx="3"/><rect class="blk fv" style="--i:3" x="69" y="56" width="55" height="22" rx="3"/></svg></div>
+        <h3 data-i18n="svc.wp.t"></h3>
+        <p class="svc__pitch" data-i18n="svc.wp.p"></p>
+        <ul class="checks">
+          <li data-i18n="svc.wp.c1"></li>
+          <li data-i18n="svc.wp.c2"></li>
+          <li data-i18n="svc.wp.c3"></li>
+        </ul>
+        <ul class="tags"><li>WordPress</li><li>SEO</li></ul>
+        <a class="svc__cta" href="#composer" data-pick="wordpress"><span data-i18n="svc.cta"></span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+
+      <article class="svc" id="svc-shop" data-reveal style="--d:2">
+        <div class="svc__top"><span class="svc__no">05</span>
+          <svg class="art" viewBox="0 0 132 84" aria-hidden="true" focusable="false"><path class="s" d="M14 14h14l8 38h56l8-28H32"/><circle class="f" cx="46" cy="64" r="5"/><circle class="f" cx="86" cy="64" r="5"/><rect class="item fg" style="--i:0" x="44" y="34" width="14" height="14" rx="3"/><rect class="item f2" style="--i:1" x="62" y="34" width="14" height="14" rx="3"/><rect class="item fv" style="--i:2" x="80" y="34" width="14" height="14" rx="3"/></svg></div>
+        <h3 data-i18n="svc.shop.t"></h3>
+        <p class="svc__pitch" data-i18n="svc.shop.p"></p>
+        <ul class="checks">
+          <li data-i18n="svc.shop.c1"></li>
+          <li data-i18n="svc.shop.c2"></li>
+          <li data-i18n="svc.shop.c3"></li>
+        </ul>
+        <ul class="tags"><li>PrestaShop</li><li>E-commerce</li></ul>
+        <a class="svc__cta" href="#composer" data-pick="prestashop"><span data-i18n="svc.cta"></span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+
+      <article class="svc svc--half" id="svc-mobile" data-reveal>
+        <div class="svc__top"><span class="svc__no">06</span>
+          <svg class="art" viewBox="0 0 132 84" aria-hidden="true" focusable="false"><defs><clipPath id="clip-phone"><rect x="50" y="14" width="32" height="60" rx="3"/></clipPath></defs><rect class="s2" x="46" y="2" width="40" height="80" rx="8"/><path class="s2 dim" d="M58 8h16"/><g clip-path="url(#clip-phone)"><g class="cards"><rect class="f" x="52" y="16" width="28" height="14" rx="3"/><rect class="f2" x="52" y="34" width="28" height="14" rx="3"/><rect class="fg" x="52" y="52" width="28" height="14" rx="3"/><rect class="fv" x="52" y="70" width="28" height="14" rx="3"/></g></g><circle class="f" cx="94" cy="14" r="4"/><circle class="ping f" cx="94" cy="14" r="4" opacity=".5"/></svg></div>
+        <h3 data-i18n="svc.mobile.t"></h3>
+        <p class="svc__pitch" data-i18n="svc.mobile.p"></p>
+        <ul class="checks">
+          <li data-i18n="svc.mobile.c1"></li>
+          <li data-i18n="svc.mobile.c2"></li>
+          <li data-i18n="svc.mobile.c3"></li>
+        </ul>
+        <ul class="tags"><li>Flutter</li><li>API</li></ul>
+        <a class="svc__cta" href="#composer" data-pick="mobile"><span data-i18n="svc.cta"></span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+
+      <article class="svc svc--half" id="svc-auto" data-reveal style="--d:1">
+        <div class="svc__top"><span class="svc__no">07</span>
+          <svg class="art" viewBox="0 0 132 84" aria-hidden="true" focusable="false"><g class="spin"><circle class="s" cx="46" cy="42" r="20" stroke-dasharray="7 5" stroke-width="7"/></g><circle class="s" cx="46" cy="42" r="12"/><circle class="f" cx="46" cy="42" r="4"/><g class="spin-r"><circle class="s2" cx="96" cy="28" r="12" stroke-dasharray="5 4" stroke-width="5"/></g><circle class="s2" cx="96" cy="28" r="6"/><path class="s flow" d="M72 66h40" stroke-dasharray="4 8"/><path class="s" d="M108 60l6 6-6 6"/></svg></div>
+        <h3 data-i18n="svc.auto.t"></h3>
+        <p class="svc__pitch" data-i18n="svc.auto.p"></p>
+        <ul class="checks">
+          <li data-i18n="svc.auto.c1"></li>
+          <li data-i18n="svc.auto.c2"></li>
+          <li data-i18n="svc.auto.c3"></li>
+        </ul>
+        <ul class="tags"><li>Python</li><li>Cron</li><li>API</li></ul>
+        <a class="svc__cta" href="#composer" data-pick="automation"><span data-i18n="svc.cta"></span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="composer" aria-labelledby="comp-title">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow" data-i18n="comp.eyebrow"></p>
+      <h2 class="h2" id="comp-title" data-i18n="comp.title"></h2>
+      <p class="lead" data-i18n="comp.lead"></p>
+    </div>
+
+    <div class="composer">
+      <div class="picker" data-reveal>
+        <fieldset class="group">
+          <legend data-i18n="comp.g1"></legend>
+          <div class="chips">
+            <button type="button" class="chip" data-mod="crm" aria-pressed="false"><span data-i18n="mod.crm"></span></button>
+            <button type="button" class="chip" data-mod="sales" aria-pressed="false"><span data-i18n="mod.sales"></span></button>
+            <button type="button" class="chip" data-mod="purchase" aria-pressed="false"><span data-i18n="mod.purchase"></span></button>
+            <button type="button" class="chip" data-mod="inventory" aria-pressed="false"><span data-i18n="mod.inventory"></span></button>
+            <button type="button" class="chip" data-mod="manufacturing" aria-pressed="false"><span data-i18n="mod.manufacturing"></span></button>
+            <button type="button" class="chip" data-mod="invoicing" aria-pressed="false"><span data-i18n="mod.invoicing"></span></button>
+            <button type="button" class="chip" data-mod="website" aria-pressed="false"><span data-i18n="mod.website"></span></button>
+            <button type="button" class="chip" data-mod="pos" aria-pressed="false"><span data-i18n="mod.pos"></span></button>
+            <button type="button" class="chip" data-mod="hr" aria-pressed="false"><span data-i18n="mod.hr"></span></button>
+          </div>
+        </fieldset>
+        <fieldset class="group">
+          <legend data-i18n="comp.g2"></legend>
+          <div class="chips">
+            <button type="button" class="chip" data-mod="audit" aria-pressed="false"><span data-i18n="mod.audit"></span></button>
+            <button type="button" class="chip" data-mod="webapp" aria-pressed="false"><span data-i18n="mod.webapp"></span></button>
+            <button type="button" class="chip" data-mod="wordpress" aria-pressed="false"><span>WordPress</span></button>
+            <button type="button" class="chip" data-mod="prestashop" aria-pressed="false"><span>PrestaShop</span></button>
+            <button type="button" class="chip" data-mod="mobile" aria-pressed="false"><span data-i18n="mod.mobile"></span></button>
+            <button type="button" class="chip" data-mod="automation" aria-pressed="false"><span data-i18n="mod.automation"></span></button>
+          </div>
+        </fieldset>
+        <p class="hint" id="chip-hint" data-i18n="comp.hint"></p>
+      </div>
+
+      <div class="sys" data-reveal style="--d:1">
+        <div class="sys__map" id="sys-map" data-empty="true">
+          <svg class="sysmap" id="sysmap" viewBox="0 0 520 400" role="img" aria-label="Schéma de votre système" data-i18n-attr="aria-label:map.aria">
+            <defs><linearGradient id="gd-core-grad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#00bafc"/><stop offset="1" stop-color="#2fe56a"/></linearGradient></defs>
+            <g id="map-links"></g>
+            <g id="map-flows"></g>
+            <g class="mcore" transform="translate(260 200)">
+              <circle class="r2" r="40"/><circle class="r1" r="34"/>
+              <rect x="-17" y="3" width="8" height="12" rx="1.5" fill="#2fe56a"/><rect x="-5" y="-3" width="8" height="18" rx="1.5" fill="#10ce97"/><rect x="7" y="-11" width="8" height="26" rx="1.5" fill="#00bafc"/>
+              <path d="M-20 6 Q0 -6 17 -21" fill="none" stroke="#7dffa5" stroke-width="2.4" stroke-linecap="round"/><path d="M11 -22 L20 -24 L18 -15 Z" fill="#7dffa5"/>
+            </g>
+            <g id="map-nodes"></g>
+          </svg>
+          <p class="sys__empty" data-i18n="map.empty"></p>
+        </div>
+
+        <div class="sum" aria-live="polite">
+          <h3 data-i18n="sum.t"></h3>
+          <p class="sum__count" id="sum-count"></p>
+          <div class="phases" id="sum-phases"></div>
+          <p class="sum__note" data-i18n="sum.note"></p>
+        </div>
+
+        <form class="brief" id="brief" novalidate>
+          <div class="brief__row">
+            <label class="field"><span data-i18n="f.name"></span><input name="name" type="text" autocomplete="name"></label>
+            <label class="field"><span data-i18n="f.company"></span><input name="company" type="text" autocomplete="organization"></label>
+          </div>
+          <label class="field"><span data-i18n="f.when"></span>
+            <select name="when">
+              <option value="" data-i18n="f.when0"></option>
+              <option value="asap" data-i18n="f.when1"></option>
+              <option value="3m" data-i18n="f.when2"></option>
+              <option value="later" data-i18n="f.when3"></option>
+            </select></label>
+          <label class="field"><span data-i18n="f.msg"></span><textarea name="msg" rows="3"></textarea></label>
+          <div class="cta-row">
+            <button class="btn btn-primary" type="submit"><span data-i18n="f.send"></span></button>
+            <button class="btn btn-ghost" type="button" id="copy-brief" data-i18n="f.copy"></button>
+          </div>
+          <p class="status" id="brief-status" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="methode" aria-labelledby="method-title">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow" data-i18n="method.eyebrow"></p>
+      <h2 class="h2" id="method-title" data-i18n="method.title"></h2>
+      <p class="lead" data-i18n="method.lead"></p>
+    </div>
+
+    <div class="steps" id="steps">
+      <svg class="method__svg" id="method-svg" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="gd-method-grad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#00bafc"/><stop offset=".5" stop-color="#10ce97"/><stop offset="1" stop-color="#2fe56a"/></linearGradient></defs>
+        <path class="track" d=""/><path class="fill" d=""/>
+      </svg>
+      <article class="step" style="--n:0"><span class="step__node"></span><span class="step__n">01</span><h3 data-i18n="m1.t"></h3><p data-i18n="m1.p"></p></article>
+      <article class="step" style="--n:1"><span class="step__node"></span><span class="step__n">02</span><h3 data-i18n="m2.t"></h3><p data-i18n="m2.p"></p></article>
+      <article class="step" style="--n:2"><span class="step__node"></span><span class="step__n">03</span><h3 data-i18n="m3.t"></h3><p data-i18n="m3.p"></p></article>
+      <article class="step" style="--n:3"><span class="step__node"></span><span class="step__n">04</span><h3 data-i18n="m4.t"></h3><p data-i18n="m4.p"></p></article>
+      <article class="step" style="--n:4"><span class="step__node"></span><span class="step__n">05</span><h3 data-i18n="m5.t"></h3><p data-i18n="m5.p"></p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="simulateur" aria-labelledby="sim-title">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow" data-i18n="sim.eyebrow"></p>
+      <h2 class="h2" id="sim-title" data-i18n="sim.title"></h2>
+      <p class="lead" data-i18n="sim.lead"></p>
+    </div>
+
+    <div class="sim" id="sim">
+      <form class="sim__ctl" id="sim-form" data-reveal>
+        <div class="ctl">
+          <div class="ctl__row"><label for="s-people" data-i18n="sim.people"></label><output for="s-people" id="o-people">5</output></div>
+          <input type="range" id="s-people" min="1" max="50" step="1" value="5">
+        </div>
+        <div class="ctl">
+          <div class="ctl__row"><label for="s-hours" data-i18n="sim.hours"></label><output for="s-hours" id="o-hours">6 h</output></div>
+          <input type="range" id="s-hours" min="1" max="20" step="1" value="6">
+        </div>
+        <div class="ctl">
+          <div class="ctl__row"><label for="s-share" data-i18n="sim.share"></label><output for="s-share" id="o-share">35 %</output></div>
+          <input type="range" id="s-share" min="10" max="80" step="5" value="35">
+        </div>
+        <details class="adv">
+          <summary data-i18n="sim.adv"></summary>
+          <div class="adv__body">
+            <label class="field" for="s-rate"><span data-i18n="sim.rate"></span><input type="number" id="s-rate" min="1" step="1" value="15" inputmode="decimal"></label>
+            <label class="field" for="s-cur"><span data-i18n="sim.cur"></span>
+              <select id="s-cur"><option value="TND" data-i18n="cur.TND"></option><option value="MAD" data-i18n="cur.MAD"></option><option value="DZD" data-i18n="cur.DZD"></option><option value="EGP" data-i18n="cur.EGP"></option><option value="XOF" data-i18n="cur.XOF"></option><option value="EUR" data-i18n="cur.EUR"></option><option value="USD" data-i18n="cur.USD"></option></select></label>
+          </div>
+        </details>
+      </form>
+
+      <div class="res" data-reveal style="--d:1">
+        <div>
+          <p class="res__k" data-i18n="sim.res.k"></p>
+          <p class="res__big" id="r-value" aria-live="polite">—</p>
+        </div>
+        <div class="res__grid">
+          <div class="stat"><b id="r-hours">—</b><span data-i18n="sim.res.hours"></span></div>
+          <div class="stat"><b id="r-days">—</b><span data-i18n="sim.res.days"></span></div>
+        </div>
+        <div class="sbars" id="sbars" data-axis="Cumul sur 12 mois · 100 % = un temps plein" data-i18n-attr="data-axis:sim.axis" aria-hidden="true">
+          <i style="--v:.08"></i><i style="--v:.16"></i><i style="--v:.25"></i><i style="--v:.33"></i><i style="--v:.42"></i><i style="--v:.5"></i><i style="--v:.58"></i><i style="--v:.67"></i><i style="--v:.75"></i><i style="--v:.83"></i><i style="--v:.92"></i><i style="--v:1"></i>
+        </div>
+        <p class="res__fine" id="sim-fine" data-i18n="sim.fine"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="wrap about">
+    <div data-reveal>
+      <img class="about__badge" src="{{base}}assets/img/emblem-256.webp" width="200" height="200" alt="Emblème GrowDev" data-i18n-attr="alt:about.alt" loading="lazy">
+      <p class="eyebrow" data-i18n="about.eyebrow"></p>
+      <h2 class="h2" id="about-title" data-i18n="about.title"></h2>
+      <p data-i18n="about.p1"></p>
+      <p class="who" data-i18n="about.who"></p>
+      <div class="facts" data-reveal>
+        <h3 class="facts__t" data-i18n="facts.t"></h3>
+        <dl>
+          <div><dt data-i18n="facts.k1"></dt><dd data-i18n="facts.v1"></dd></div>
+          <div><dt data-i18n="facts.k2"></dt><dd data-i18n="facts.v2"></dd></div>
+          <div><dt data-i18n="facts.k3"></dt><dd data-i18n="facts.v3"></dd></div>
+          <div><dt data-i18n="facts.k4"></dt><dd data-i18n="facts.v4"></dd></div>
+          <div><dt data-i18n="facts.k5"></dt><dd data-i18n="facts.v5"></dd></div>
+          <div><dt data-i18n="facts.k6"></dt><dd><a href="mailto:contact@werchti.tn" dir="ltr">contact@werchti.tn</a></dd></div>
+        </dl>
+      </div>
+    </div>
+    <div>
+      <article class="pledge" data-reveal><span class="pledge__n">01</span><h3 data-i18n="p1.t"></h3><p data-i18n="p1.p"></p></article>
+      <article class="pledge" data-reveal><span class="pledge__n">02</span><h3 data-i18n="p2.t"></h3><p data-i18n="p2.p"></p></article>
+      <article class="pledge" data-reveal><span class="pledge__n">03</span><h3 data-i18n="p3.t"></h3><p data-i18n="p3.p"></p></article>
+      <article class="pledge" data-reveal><span class="pledge__n">04</span><h3 data-i18n="p4.t"></h3><p data-i18n="p4.p"></p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq">
+    <div class="sec-head" data-reveal>
+      <p class="eyebrow" data-i18n="faq.eyebrow"></p>
+      <h2 class="h2" id="faq-title" data-i18n="faq.title"></h2>
+      <p class="lead" data-i18n="faq.lead"></p>
+    </div>
+    <div class="faq__list" data-reveal>
+      <details class="qa" name="faq" open><summary><h3 data-i18n="faq.q1"></h3></summary><div class="qa__a"><p data-i18n="faq.a1"></p></div></details>
+      <details class="qa" name="faq"><summary><h3 data-i18n="faq.q2"></h3></summary><div class="qa__a"><p data-i18n="faq.a2"></p></div></details>
+      <details class="qa" name="faq"><summary><h3 data-i18n="faq.q3"></h3></summary><div class="qa__a"><p data-i18n="faq.a3"></p></div></details>
+      <details class="qa" name="faq"><summary><h3 data-i18n="faq.q4"></h3></summary><div class="qa__a"><p data-i18n="faq.a4"></p></div></details>
+      <details class="qa" name="faq"><summary><h3 data-i18n="faq.q5"></h3></summary><div class="qa__a"><p data-i18n="faq.a5"></p></div></details>
+      <details class="qa" name="faq"><summary><h3 data-i18n="faq.q6"></h3></summary><div class="qa__a"><p data-i18n="faq.a6"></p></div></details>
+      <details class="qa" name="faq"><summary><h3 data-i18n="faq.q7"></h3></summary><div class="qa__a"><p data-i18n="faq.a7"></p></div></details>
+      <details class="qa" name="faq"><summary><h3 data-i18n="faq.q8"></h3></summary><div class="qa__a"><p data-i18n="faq.a8"></p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact" aria-labelledby="contact-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-panel" data-reveal>
+      <p class="eyebrow" data-i18n="contact.eyebrow"></p>
+      <h2 id="contact-title" data-i18n="contact.title"></h2>
+      <p data-i18n="contact.lead"></p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="mailto:contact@werchti.tn?subject={{mailSubject}}" id="mail-cta"><span data-i18n="contact.cta1"></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost btn-lg" href="#composer" data-i18n="contact.cta2"></a>
+      </div>
+      <a class="mail" href="mailto:contact@werchti.tn" dir="ltr">contact@werchti.tn</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top" aria-label="GrowDev, haut de page" data-i18n-attr="aria-label:brand.aria"><img src="{{base}}assets/img/emblem-96.webp" width="40" height="40" alt="" loading="lazy"><span class="brand-word">Grow<span>Dev</span></span></a>
+        <p data-i18n="foot.tag"></p>
+      </div>
+      <div>
+        <h2 data-i18n="foot.nav"></h2>
+        <ul>
+          <li><a href="#services" data-i18n="nav.services"></a></li>
+          <li><a href="#composer" data-i18n="nav.composer"></a></li>
+          <li><a href="#methode" data-i18n="nav.method"></a></li>
+          <li><a href="#simulateur" data-i18n="nav.sim"></a></li>
+          <li><a href="#about" data-i18n="nav.about"></a></li>
+          <li><a href="#faq" data-i18n="nav.faq"></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="foot.contact"></h2>
+        <ul>
+          <li><a href="mailto:contact@werchti.tn" dir="ltr">contact@werchti.tn</a></li>
+          <li data-i18n="foot.where"></li>
+          <li data-i18n="foot.langs"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="year">2026</span> GrowDev. <span data-i18n="foot.rights"></span></span>
+      <span data-i18n="foot.priv"></span>
+    </div>
+  </div>
+</footer>
+
+<script src="{{base}}assets/js/config.js"></script>
+<script src="{{base}}assets/js/dict-{{lang}}.js"></script>
+<script src="{{base}}assets/js/i18n.js"></script>
+<script src="{{base}}assets/js/hero.js"></script>
+<script src="{{base}}assets/js/ui.js"></script>
+<script src="{{base}}assets/js/composer.js"></script>
+<script src="{{base}}assets/js/calculator.js"></script>
+<script src="{{base}}assets/js/main.js"></script>
+</body>
+</html>

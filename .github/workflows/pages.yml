@@ -1,0 +1,57 @@
+# Builds the three language pages, checks them, and publishes site/ to GitHub Pages.
+# Pull requests only build and check. Pushes to main also deploy.
+name: Build, check and deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0 # the sitemap's <lastmod> comes from git history
+
+      - name: Node version
+        run: node --version
+
+      - name: Build the pages (fr, ar, en) from src/
+        run: node tools/build.mjs
+
+      - name: Check SEO, links, accessibility basics, CSP and size budgets
+        run: node tools/check.mjs
+
+      - name: Configure Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v6
+
+      - name: Upload the site
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write # publish to GitHub Pages
+      id-token: write # prove the deployment comes from this workflow
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

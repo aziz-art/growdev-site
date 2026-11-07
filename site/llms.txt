@@ -1,0 +1,46 @@
+# GrowDev
+
+> GrowDev is a software company based in Tunisia. It builds Odoo ERP systems, WordPress websites, PrestaShop online shops, web and mobile applications and automation for businesses in Tunisia, across Africa and worldwide, in French, Arabic and English.
+
+## Key facts
+
+- Name: GrowDev (slogan: "Your growth, our code.")
+- Based in: Tunisia
+- Activity: Software development: Odoo ERP, web, mobile, automation
+- Coverage: Tunisia first, then Africa and worldwide, remotely
+- Languages: French, Arabic, English
+- Quotes: In DT for Tunisia, in € or $ internationally
+- Founder: Aziz Chaibi, full-stack developer specialised in odoo
+- Contact: contact@werchti.tn
+
+## Pages
+
+- [GrowDev en français](https://growdev.werchti.tn/): GrowDev, société de développement en Tunisie : ERP Odoo, sites web, boutiques en ligne, applications mobiles. Pour la Tunisie, l’Afrique et le monde.
+- [GrowDev بالعربية](https://growdev.werchti.tn/ar/): GrowDev شركة تطوير برمجيات في تونس: نظام Odoo ERP ومواقع الويب والمتاجر الإلكترونية وتطبيقات الجوال للمؤسسات في تونس وإفريقيا والعالم.
+- [GrowDev in English](https://growdev.werchti.tn/en/): GrowDev is a software company in Tunisia: Odoo ERP, websites, online shops and mobile apps for businesses in Tunisia, Africa and worldwide.
+
+## Services
+
+- [Odoo ERP](https://growdev.werchti.tn/en/#svc-odoo): Run your whole business in a single tool: sales, purchasing, stock, invoicing, production.
+- [Digital transformation](https://growdev.werchti.tn/en/#svc-digital): We spot what wastes your time, then simplify it, step by step.
+- [Web development](https://growdev.werchti.tn/en/#svc-web): Custom websites and web applications, fast and secure.
+- [WordPress websites](https://growdev.werchti.tn/en/#svc-wp): A site you can edit yourself, without depending on anyone.
+- [PrestaShop store](https://growdev.werchti.tn/en/#svc-shop): Sell online with a clear shop, from catalogue to payment.
+- [Mobile apps](https://growdev.werchti.tn/en/#svc-mobile): An Android and iOS app connected to your data.
+- [Automation](https://growdev.werchti.tn/en/#svc-auto): No more copy-paste: your repetitive tasks run on their own.
+
+## FAQ
+
+- [What is Odoo and what does it do for my business?](https://growdev.werchti.tn/en/#faq): Odoo is a modular business management software (ERP).
+- [Is Odoo a good fit for a Tunisian small or medium business?](https://growdev.werchti.tn/en/#faq): Yes, as soon as your sales, stock or invoicing are spread across separate files and tools.
+- [How much does an Odoo project, a website or an app cost?](https://growdev.werchti.tn/en/#faq): The price depends on the scope: number of modules, volume of data to migrate, custom development and training.
+- [How long does it take to set up Odoo?](https://growdev.werchti.tn/en/#faq): It depends on the number of modules.
+- [Do you work with companies outside Tunisia?](https://growdev.werchti.tn/en/#faq): Yes.
+- [Can my website or app be in Arabic, French and English?](https://growdev.werchti.tn/en/#faq): Yes.
+- [WordPress, PrestaShop or a custom app: which one should I choose?](https://growdev.werchti.tn/en/#faq): WordPress suits showcase sites and blogs that you edit yourself.
+- [What happens after the launch?](https://growdev.werchti.tn/en/#faq): We train your team, set up backups and security, then keep following up: fixes, updates and new features, at the pace of your business.
+
+## Optional
+
+- [Full text of the site in French, Arabic and English](https://growdev.werchti.tn/llms-full.txt)
+- [Sitemap](https://growdev.werchti.tn/sitemap.xml)

@@ -1,0 +1,414 @@
+# GrowDev — full text
+
+Source: https://growdev.werchti.tn/ · Contact: contact@werchti.tn
+
+# GrowDev in English (en)
+
+URL: https://growdev.werchti.tn/en/
+
+## GrowDev | Odoo ERP, Websites and Mobile Apps in Tunisia
+
+GrowDev is a software company in Tunisia: Odoo ERP, websites, online shops and mobile apps for businesses in Tunisia, Africa and worldwide.
+
+GrowDev is a software company in Tunisia. We digitalise your business with Odoo ERP, websites, online shops, mobile apps and automation, from the first conversation to going live.
+
+## Everything to digitalise your business, jargon-free.
+
+Seven ways to save time, sell more and run your business better. Pick the one that speaks to you, or combine them.
+
+### Odoo ERP
+
+Run your whole business in a single tool: sales, purchasing, stock, invoicing, production.
+
+- Odoo implementation and configuration around your processes
+- Custom Odoo module development (Python, XML)
+- Data import and migration
+- Connections with your other tools (API, email)
+- Hosting, backups and updates
+- Team training in French, Arabic or English
+- Multiple currencies, local taxes and an interface in French, Arabic or English
+- Build my Odoo
+
+### Digital transformation
+
+We spot what wastes your time, then simplify it, step by step.
+
+- Audit of your tools and processes
+- A clear, step-by-step roadmap
+- The right tools, not gadgets
+- Support for your team
+- Let’s take stock together
+
+### Web development
+
+Custom websites and web applications, fast and secure.
+
+- Showcase sites and customer portals
+- Business applications (Python, Django)
+- Speed, search visibility and accessibility
+- Multilingual sites (French, Arabic, English), including right-to-left
+
+### WordPress websites
+
+A site you can edit yourself, without depending on anyone.
+
+- Custom design that fits your brand
+- Pages that are easy to update
+- Security, backups, speed
+
+### PrestaShop store
+
+Sell online with a clear shop, from catalogue to payment.
+
+- Catalogue, design and modules
+- Online payment and delivery
+- Can be connected to your ERP
+
+### Mobile apps
+
+An Android and iOS app connected to your data.
+
+- One codebase for Android and iOS (Flutter)
+- Connected to your ERP or API
+- Publishing on the app stores
+
+### Automation
+
+No more copy-paste: your repetitive tasks run on their own.
+
+- Sync between your tools
+- Scheduled tasks, emails, automatic reports
+- Custom scripts and integrations
+
+## Five steps, one direction: up.
+
+You always know where your project stands and what comes next.
+
+1. Listen: We understand your business and goals before talking tech.
+2. Map: Processes, data, current tools: we spot what wastes your time.
+3. Build: Short, visible deliveries. You approve each step.
+4. Launch: Go-live, team training, backups and security in place.
+5. Grow: Follow-up, improvements and new modules, at the pace of your business.
+
+## Clean code, in service of your growth.
+
+GrowDev is a software company based in Tunisia. We support businesses in Tunisia first, then across Africa and worldwide, remotely. We build our own products, such as Werchti, and bring the same standard to your projects: Odoo, websites, shops and apps.
+
+Founded by Aziz Chaibi, a full-stack developer specialised in Odoo.
+
+### GrowDev at a glance
+
+- Activity: Software development: Odoo ERP, web, mobile, automation
+- Based in: Tunisia
+- Coverage: Tunisia first, then Africa and worldwide, remotely
+- Languages: French, Arabic, English
+- Quotes: In DT for Tunisia, in € or $ internationally
+- Contact: contact@werchti.tn
+
+## Frequently asked questions
+
+### What is Odoo and what does it do for my business?
+
+Odoo is a modular business management software (ERP). It brings sales, purchasing, stock, invoicing, manufacturing, human resources and your website into one tool. You only switch on the modules you need, and they share the same data: no more double entry, no more scattered files.
+
+### Is Odoo a good fit for a Tunisian small or medium business?
+
+Yes, as soon as your sales, stock or invoicing are spread across separate files and tools. Odoo is rolled out step by step, handles several currencies and taxes, and its interface is available in Arabic, French and English. We start by analysing your business to confirm it is the right choice.
+
+### How much does an Odoo project, a website or an app cost?
+
+The price depends on the scope: number of modules, volume of data to migrate, custom development and training. We do not publish a fixed rate. After a first conversation, we send a clear quote split into phases: in Tunisian dinars (DT) for Tunisia, in euros or dollars internationally.
+
+### How long does it take to set up Odoo?
+
+It depends on the number of modules. As a rough guide, a simple scope (for example CRM, sales and invoicing) can be ready in a few weeks, while a full project with data migration and custom development takes several months. We deliver in short steps so you can use the first modules quickly.
+
+### Do you work with companies outside Tunisia?
+
+Yes. We support Tunisian businesses first, then companies across Africa and the rest of the world, remotely. We work in French, Arabic and English, and run meetings by video call to suit your time zone.
+
+### Can my website or app be in Arabic, French and English?
+
+Yes. We build multilingual websites, shops and apps, with right-to-left layout for Arabic, several currencies and content that is easy to translate. Odoo, WordPress and PrestaShop all handle several languages, with dedicated extensions when needed.
+
+### WordPress, PrestaShop or a custom app: which one should I choose?
+
+WordPress suits showcase sites and blogs that you edit yourself. PrestaShop is built for selling online, with catalogue, cart and payment. A custom web or mobile app makes sense when your processes are specific and existing tools fall short. We advise you once we understand your need.
+
+### What happens after the launch?
+
+We train your team, set up backups and security, then keep following up: fixes, updates and new features, at the pace of your business. You keep the same point of contact from start to finish.
+
+# GrowDev en français (fr)
+
+URL: https://growdev.werchti.tn/
+
+## GrowDev | Odoo, sites web et applications mobiles en Tunisie
+
+GrowDev, société de développement en Tunisie : ERP Odoo, sites web, boutiques en ligne, applications mobiles. Pour la Tunisie, l’Afrique et le monde.
+
+GrowDev est une société de développement en Tunisie. Nous digitalisons votre entreprise : ERP Odoo, sites web, boutiques en ligne, applications mobiles et automatisation, du premier échange jusqu’à la mise en ligne.
+
+## Tout pour digitaliser votre entreprise, sans jargon.
+
+Sept façons de gagner du temps, de vendre plus et de mieux piloter votre activité. Choisissez celle qui vous parle, ou combinez-les.
+
+### ERP Odoo
+
+Pilotez toute votre entreprise dans un seul outil : ventes, achats, stock, facturation, production.
+
+- Implémentation et paramétrage d’Odoo selon vos processus
+- Développement de modules Odoo sur mesure (Python, XML)
+- Reprise et migration de vos données
+- Connexions avec vos autres outils (API, e-mail)
+- Hébergement, sauvegardes et mises à jour
+- Formation de vos équipes en français, en arabe ou en anglais
+- Plusieurs devises, taxes locales et interface en français, arabe ou anglais
+- Composer mon Odoo
+
+### Transformation digitale
+
+On repère ce qui vous fait perdre du temps, puis on le simplifie, étape par étape.
+
+- Audit de vos outils et de vos processus
+- Feuille de route claire, par étapes
+- Les bons outils, pas des gadgets
+- Accompagnement des équipes
+- Faire le point ensemble
+
+### Développement web
+
+Sites et applications web sur mesure, rapides et sécurisés.
+
+- Sites vitrines et espaces clients
+- Applications métier (Python, Django)
+- Vitesse, référencement et accessibilité
+- Sites multilingues (français, arabe, anglais), y compris de droite à gauche
+
+### Sites WordPress
+
+Un site que vous pouvez modifier vous-même, sans dépendre de personne.
+
+- Design sur mesure à votre image
+- Pages simples à mettre à jour
+- Sécurité, sauvegardes, rapidité
+
+### Boutique PrestaShop
+
+Vendez en ligne avec une boutique claire, du catalogue jusqu’au paiement.
+
+- Catalogue, design et modules
+- Paiement en ligne et livraison
+- Connexion possible avec votre ERP
+
+### Applications mobiles
+
+Une application Android et iOS, connectée à vos données.
+
+- Un seul code pour Android et iOS (Flutter)
+- Connexion à votre ERP ou à votre API
+- Publication sur les stores
+
+### Automatisation
+
+Fini les copier-coller : vos tâches répétitives se font toutes seules.
+
+- Synchronisation entre vos outils
+- Tâches planifiées, e-mails, rapports automatiques
+- Scripts et intégrations sur mesure
+
+## Cinq étapes, une seule direction : vers le haut.
+
+Vous savez toujours où en est votre projet et ce qui vient ensuite.
+
+1. Écouter: On comprend votre métier et vos objectifs avant de parler technique.
+2. Cartographier: Processus, données, outils actuels : on repère ce qui vous fait perdre du temps.
+3. Construire: Des livraisons courtes et visibles. Vous validez à chaque étape.
+4. Lancer: Mise en ligne, formation de vos équipes, sauvegardes et sécurité en place.
+5. Faire grandir: Suivi, évolutions et nouveaux modules, au rythme de votre activité.
+
+## Du code propre, au service de votre croissance.
+
+GrowDev est une société de développement basée en Tunisie. Nous accompagnons les entreprises en Tunisie d’abord, puis en Afrique et dans le monde, à distance. Nous concevons nos propres produits, comme Werchti, et mettons la même exigence au service de vos projets : Odoo, sites, boutiques et applications.
+
+Fondée par Aziz Chaibi, développeur full-stack spécialisé Odoo.
+
+### GrowDev en bref
+
+- Activité: Développement logiciel : ERP Odoo, web, mobile, automatisation
+- Basée en: Tunisie
+- Intervention: Tunisie d’abord, puis Afrique et international, à distance
+- Langues: Français, arabe, anglais
+- Devis: En DT pour la Tunisie, en € ou en $ à l’international
+- Contact: contact@werchti.tn
+
+## Questions fréquentes
+
+### Qu’est-ce qu’Odoo et à quoi sert-il dans mon entreprise ?
+
+Odoo est un logiciel de gestion (ERP) modulaire. Il regroupe dans un seul outil les ventes, les achats, le stock, la facturation, la fabrication, les ressources humaines et le site web. Vous n’activez que les modules utiles, et ils partagent les mêmes données : plus de double saisie, plus de fichiers dispersés.
+
+### Odoo convient-il à une PME tunisienne ?
+
+Oui, dès que vos ventes, votre stock ou votre facturation sont dispersés entre des fichiers et des outils séparés. Odoo se met en place par étapes, gère plusieurs devises et plusieurs taxes, et son interface existe en arabe, en français et en anglais. Nous commençons par analyser votre activité pour confirmer que c’est le bon choix.
+
+### Combien coûte un projet Odoo, un site web ou une application ?
+
+Le prix dépend du périmètre : nombre de modules, volume de données à reprendre, développements sur mesure et formation. Nous ne publions pas de tarif fixe. Après un premier échange, nous vous remettons un devis clair, découpé en phases : en dinars tunisiens (DT) pour la Tunisie, en euros ou en dollars à l’international.
+
+### Combien de temps faut-il pour mettre en place Odoo ?
+
+Cela dépend du nombre de modules. À titre indicatif, un périmètre simple (par exemple CRM, ventes et facturation) peut être prêt en quelques semaines, alors qu’un projet complet avec reprise de données et développements spécifiques s’étale sur plusieurs mois. Nous livrons par étapes courtes, pour que vous utilisiez rapidement les premiers modules.
+
+### Travaillez-vous avec des entreprises hors de Tunisie ?
+
+Oui. Nous accompagnons d’abord les entreprises tunisiennes, puis celles d’Afrique et du reste du monde, à distance. Nous échangeons en français, en arabe et en anglais, et nous organisons les réunions en visioconférence selon votre fuseau horaire.
+
+### Mon site ou mon application peut-il être en arabe, en français et en anglais ?
+
+Oui. Nous créons des sites, des boutiques et des applications multilingues, avec l’écriture de droite à gauche pour l’arabe, plusieurs devises et des contenus faciles à traduire. Odoo, WordPress et PrestaShop gèrent plusieurs langues, avec des extensions dédiées si besoin.
+
+### WordPress, PrestaShop ou application sur mesure : lequel choisir ?
+
+WordPress convient aux sites vitrines et aux blogs que vous modifiez vous-même. PrestaShop est conçu pour vendre en ligne, avec catalogue, panier et paiement. Une application sur mesure, web ou mobile, se justifie quand vos processus sont spécifiques et que les outils existants ne suffisent pas. Nous vous conseillons après avoir compris votre besoin.
+
+### Que se passe-t-il après la mise en ligne ?
+
+Nous formons vos équipes, mettons en place les sauvegardes et la sécurité, puis assurons le suivi : corrections, mises à jour et nouvelles fonctionnalités, au rythme de votre activité. Vous gardez le même interlocuteur du début à la fin.
+
+# GrowDev بالعربية (ar)
+
+URL: https://growdev.werchti.tn/ar/
+
+## GrowDev | نظام Odoo ERP ومواقع الويب وتطبيقات الجوال في تونس
+
+GrowDev شركة تطوير برمجيات في تونس: نظام Odoo ERP ومواقع الويب والمتاجر الإلكترونية وتطبيقات الجوال للمؤسسات في تونس وإفريقيا والعالم.
+
+GrowDev شركة تطوير برمجيات في تونس. نرقمن مؤسستك بنظام Odoo ERP ومواقع الويب والمتاجر الإلكترونية وتطبيقات الجوال والأتمتة، من أول لقاء حتى الإطلاق.
+
+## كل ما تحتاجه لرقمنة مؤسستك، دون مصطلحات معقّدة.
+
+سبع طرق لربح الوقت وزيادة المبيعات وتسيير نشاطك بشكل أفضل. اختر ما يناسبك أو اجمع بينها.
+
+### نظام Odoo ERP
+
+سيّر مؤسستك بأكملها من أداة واحدة: المبيعات، المشتريات، المخزون، الفوترة، الإنتاج.
+
+- تنفيذ Odoo وإعداده وفق إجراءات عملك
+- تطوير وحدات Odoo مخصصة (Python، XML)
+- استرجاع بياناتك وترحيلها
+- الربط مع أدواتك الأخرى (API، البريد الإلكتروني)
+- الاستضافة والنسخ الاحتياطي والتحديثات
+- تكوين فرقك بالعربية أو الفرنسية أو الإنجليزية
+- عدة عملات وضرائب محلية وواجهة بالعربية أو الفرنسية أو الإنجليزية
+- صمّم نظام Odoo الخاص بك
+
+### التحول الرقمي
+
+نرصد ما يُضيّع وقتك، ثم نبسّطه خطوة بخطوة.
+
+- تدقيق أدواتك وإجراءاتك
+- خارطة طريق واضحة على مراحل
+- الأدوات المناسبة، لا الكماليات
+- مرافقة فرقك
+- لنقف على وضعك معًا
+
+### تطوير الويب
+
+مواقع وتطبيقات ويب مخصصة، سريعة وآمنة.
+
+- مواقع تعريفية وفضاءات للعملاء
+- تطبيقات خاصة بنشاطك (Python، Django)
+- السرعة، والظهور في محركات البحث، وإمكانية الوصول
+- مواقع متعددة اللغات (العربية والفرنسية والإنجليزية) مع دعم الكتابة من اليمين إلى اليسار
+
+### مواقع WordPress
+
+موقع تعدّله بنفسك دون الاعتماد على أحد.
+
+- تصميم مخصص يعكس هويتك
+- صفحات يسهل تحديثها
+- الأمان والنسخ الاحتياطي والسرعة
+
+### متجر PrestaShop
+
+بِع عبر الإنترنت بمتجر واضح، من الكتالوج إلى الدفع.
+
+- الكتالوج والتصميم والوحدات
+- الدفع عبر الإنترنت والتوصيل
+- إمكانية الربط مع نظام ERP الخاص بك
+
+### تطبيقات الجوال
+
+تطبيق Android و iOS مرتبط ببياناتك.
+
+- برمجة واحدة تعمل على Android و iOS (Flutter)
+- الربط مع نظام ERP أو واجهة API الخاصة بك
+- النشر على متاجر التطبيقات
+
+### الأتمتة
+
+وداعًا للنسخ واللصق: مهامك المتكررة تُنجز من تلقاء نفسها.
+
+- مزامنة أدواتك فيما بينها
+- مهام مجدولة ورسائل بريد وتقارير تلقائية
+- سكربتات وتكاملات مخصصة
+
+## خمس خطوات، اتجاه واحد: نحو الأعلى.
+
+تعرف دائمًا أين وصل مشروعك وما الذي سيأتي بعده.
+
+1. الإصغاء: نفهم مجال عملك وأهدافك قبل أن نتحدث عن التقنية.
+2. التحليل: الإجراءات والبيانات والأدوات الحالية: نرصد ما يُضيّع وقتك.
+3. البناء: تسليمات قصيرة وملموسة. تصادق على كل مرحلة.
+4. الإطلاق: النشر وتكوين فرقك، مع نسخ احتياطي وأمان جاهزين.
+5. النمو: المتابعة والتطوير ووحدات جديدة، بإيقاع نشاطك.
+
+## شفرة نظيفة في خدمة نموّك.
+
+GrowDev شركة تطوير برمجيات مقرّها تونس. نرافق المؤسسات في تونس أولًا، ثم في إفريقيا والعالم، عن بُعد. نصمّم منتجاتنا الخاصة مثل Werchti، ونضع المعيار نفسه من الجودة في خدمة مشاريعكم: Odoo والمواقع والمتاجر والتطبيقات.
+
+أسّسها عزيز الشايبي، مطوّر Full-stack متخصص في Odoo.
+
+### GrowDev في سطور
+
+- النشاط: تطوير البرمجيات: Odoo ERP والويب والجوال والأتمتة
+- المقر: تونس
+- مجال التدخل: تونس أولًا، ثم إفريقيا والعالم، عن بُعد
+- اللغات: العربية، الفرنسية، الإنجليزية
+- عروض الأسعار: بالدينار التونسي (د.ت) لتونس، وباليورو أو الدولار دوليًا
+- التواصل: contact@werchti.tn
+
+## الأسئلة الشائعة
+
+### ما هو Odoo وما فائدته لمؤسستي؟
+
+Odoo برنامج لتسيير المؤسسات (ERP) مبني على وحدات مستقلة. يجمع في أداة واحدة المبيعات والمشتريات والمخزون والفوترة والتصنيع والموارد البشرية والموقع الإلكتروني. تفعّل فقط الوحدات التي تحتاجها، وتتشارك كلها البيانات نفسها: لا إدخال مزدوج ولا ملفات متناثرة.
+
+### هل يناسب Odoo المؤسسات الصغرى والمتوسطة في تونس؟
+
+نعم، متى كانت مبيعاتك أو مخزونك أو فواتيرك موزعة بين ملفات وأدوات منفصلة. يُركَّب Odoo على مراحل، ويدعم عدة عملات وضرائب، وتتوفر واجهته بالعربية والفرنسية والإنجليزية. نبدأ بتحليل نشاطك للتأكد من أنه الخيار الصحيح.
+
+### كم تبلغ كلفة مشروع Odoo أو موقع ويب أو تطبيق؟
+
+تتوقف الكلفة على نطاق المشروع: عدد الوحدات وحجم البيانات المراد ترحيلها والتطويرات المخصصة والتكوين. لا ننشر تعريفة ثابتة. بعد أول لقاء نرسل لك عرض أسعار واضحًا مقسّمًا إلى مراحل: بالدينار التونسي (د.ت) لتونس، وباليورو أو الدولار دوليًا.
+
+### كم يستغرق إعداد Odoo؟
+
+يتوقف ذلك على عدد الوحدات. على سبيل التقريب، يمكن أن يكون نطاق بسيط (مثل إدارة العملاء والمبيعات والفوترة) جاهزًا في بضعة أسابيع، أما مشروع كامل مع ترحيل البيانات وتطويرات خاصة فيمتد على عدة أشهر. نسلّم على مراحل قصيرة لتستعمل الوحدات الأولى بسرعة.
+
+### هل تعملون مع مؤسسات خارج تونس؟
+
+نعم. نرافق المؤسسات التونسية أولًا، ثم مؤسسات إفريقيا وبقية العالم عن بُعد. نتواصل بالعربية والفرنسية والإنجليزية، ونعقد الاجتماعات عبر المكالمات المرئية بما يناسب توقيتك.
+
+### هل يمكن أن يكون موقعي أو تطبيقي بالعربية والفرنسية والإنجليزية؟
+
+نعم. نصمّم مواقع ومتاجر وتطبيقات متعددة اللغات، مع تخطيط من اليمين إلى اليسار للعربية وعدة عملات ومحتوى سهل الترجمة. يدعم Odoo و WordPress و PrestaShop عدة لغات، مع إضافات مخصصة عند الحاجة.
+
+### WordPress أم PrestaShop أم تطبيق مخصص: ماذا أختار؟
+
+يناسب WordPress المواقع التعريفية والمدونات التي تعدّلها بنفسك. أما PrestaShop فمصمم للبيع عبر الإنترنت مع الكتالوج والسلة والدفع. ويُبرَّر التطبيق المخصص، سواء كان ويب أو جوالًا، حين تكون إجراءاتك خاصة ولا تكفي الأدوات الموجودة. ننصحك بعد أن نفهم احتياجك.
+
+### ماذا يحدث بعد الإطلاق؟
+
+نكوّن فريقك، ونعدّ النسخ الاحتياطي والأمان، ثم نواصل المتابعة: إصلاحات وتحديثات وميزات جديدة بإيقاع نشاطك. يبقى محاورك هو نفسه من البداية إلى النهاية.
