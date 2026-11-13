@@ -21,9 +21,9 @@
 | Type | Always-on website (not a time-boxed campaign) |
 | Funnel | Awareness (hero, services) → consideration (method, "compose your system", simulator, FAQ) → conversion (project brief by e-mail) |
 | Platforms | Web, mobile first. Link previews on WhatsApp, LinkedIn, Facebook, X |
-| Address | `growdev.werchti.tn` (GitHub Pages, DNS at OVH) |
-| Flight dates | Live as soon as the DNS record is added. No end date |
-| Budget | No hosting cost; the domain is already owned |
+| Address | `https://growdev-tn.github.io/` (GitHub Pages; an own domain can replace it later by changing one setting) |
+| Flight dates | Live as soon as the first deploy is done. No end date |
+| Budget | No hosting cost. A custom domain is optional and is the only possible expense |
 
 **Success looks like.** A visitor can say in one sentence what GrowDev does, finds the service that matches their problem in under 30 seconds, and sends a brief without having to know any IT vocabulary.
 
@@ -139,7 +139,7 @@
 |---|---|
 | Brief and first preview | 2026-11-05 |
 | Owner feedback | to be set by the owner |
-| Go-live | after the GitHub username is known and the OVH CNAME record is added (same day is possible) |
+| Go-live | after the first deploy on `growdev-tn.github.io` (same day is possible) |
 
 **Revision policy.** Two rounds of copy and layout changes after the first preview. Copy lives in three JSON files, so wording changes never touch the layout.
 
@@ -193,7 +193,7 @@
 
 **Open questions for the owner**
 
-1. GitHub username (for the repository and the DNS record).
+1. GitHub username and organization (answered: `aziz-art` and `growdev-tn`).
 2. Founder name as it should appear, and its Arabic spelling (currently «عزيز الشايبي»).
 3. Which projects may be shown as case studies, and with what wording (the owner's own products, such as Werchti and IqrarSanté, are natural first candidates).
 4. A WhatsApp or phone number to add as a second contact path.

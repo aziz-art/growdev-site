@@ -10,7 +10,7 @@ Written with the *dev-architect* method: constitution first, then architecture, 
 | Users | Owners and managers of SMEs: Tunisia first, then Africa, then the world |
 | Scale | Low traffic with spikes (a shared link on WhatsApp or LinkedIn) |
 | Team and budget | One developer; no hosting budget |
-| Deployment | GitHub Pages, custom domain `growdev.werchti.tn`, DNS at OVH |
+| Deployment | GitHub Pages from GitHub Actions at `https://growdev-tn.github.io/` (organization `growdev-tn`, repository `growdev-tn.github.io`); no DNS to manage |
 | Compliance | The site collects no personal data (see §3) |
 
 ---
@@ -37,7 +37,7 @@ A fast, accessible, animated showcase that tells a non-technical owner what Grow
 |---|---|
 | Languages | French (`/`), Arabic (`/ar/`, `dir="rtl"`), English (`/en/`) |
 | Hosting | GitHub Pages: static files only, no custom response headers, no server logic |
-| Domain | `growdev.werchti.tn` via a CNAME at OVH; `CNAME` file in `site/` |
+| Address | `https://growdev-tn.github.io/`, set once as `url` in `src/site.json`. Moving to a custom domain later is a one-line change; the build then writes `site/CNAME` itself |
 | Currency | DT first and default; MAD, DZD, EGP, XOF, EUR, USD selectable |
 | Data | No cookies, no personal data stored or sent. Only `localStorage["gd-lang"]`, written when the visitor clicks a language link |
 | Browsers | Current evergreen browsers (2022 onward). The FAQ's one-at-a-time behaviour (`<details name>`) needs Chrome 120, Safari 17.2 or Firefox 130; older browsers simply allow several answers open |
@@ -84,7 +84,7 @@ A fast, accessible, animated showcase that tells a non-technical owner what Grow
 
  git push ─► GitHub Actions: build → check → upload-pages-artifact → deploy-pages
                                                   │
- Visitor ─► OVH DNS (CNAME growdev → aziz-art.github.io) ─► GitHub Pages (HTTPS, Let's Encrypt)
+ Visitor ─► growdev-tn.github.io ─► GitHub Pages (HTTPS)
 ```
 
 ### 2.3 Content model (instead of a database)
@@ -136,7 +136,7 @@ There are no accounts, no database, no uploads and no secrets, so the posture is
 | CSP | Set by `<meta>`: `default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'`. No inline scripts, no `eval`. The checker enforces it |
 | Output handling | Visitor text is written with `textContent` and `encodeURIComponent`, never `innerHTML`. Page HTML comes only from our own dictionaries at build time |
 | Supply chain | No runtime dependencies. The build tool has none. Playwright is used only on a developer machine for share images. Actions are pinned to major versions and updated by Dependabot |
-| DNS | A CAA record, if any, must allow `letsencrypt.org`. No wildcard CNAME to GitHub. Verify the domain in GitHub (TXT `_github-pages-challenge-aziz-art`) to prevent subdomain takeover. Never touch the MX and Zimbra records of `werchti.tn` |
+| DNS and domain | No DNS record is needed on `growdev-tn.github.io`, so there is no subdomain to take over. If a custom domain is added later: no wildcard CNAME to GitHub, verify the domain in GitHub (organization Settings → Pages), and a CAA record, if any, must allow `letsencrypt.org`. The mail records of `werchti.tn` (MX, Zimbra) are unrelated to the site and must not be touched |
 | Spam | The address is public text; Zimbra filtering is the defence. Obfuscating it would hurt accessibility |
 | Monitoring | Actions logs, Search Console security report, a free uptime monitor |
 
@@ -217,18 +217,19 @@ Hand-built, no library: sticky header with language switch, mobile full-screen m
 | **1 — Core loop** | Hero → services → composer → e-mail brief | ✅ Done |
 | **2 — Secondary features** | Method, simulator, about, FAQ, contact; Arabic RTL; SEO, GEO, AEO; share images; 404 | ✅ Done |
 | **3 — Hardening** | UX/UI audit and fixes, accessibility scan, performance numbers, cross-browser and real-device pass | ⏳ In progress |
-| **4 — Launch** | Push, enable Pages, OVH CNAME, HTTPS, Search Console, Bing, Google Business Profile, `sameAs` links | ⏭️ Next (GitHub username: `aziz-art`) |
+| **4 — Launch** | Push, enable Pages (GitHub Actions), Search Console, Bing, Google Business Profile, `sameAs` links | 🔄 Deployed at `growdev-tn.github.io` (7 Nov 2026); Search Console and Bing next |
 | **5 — Iteration** | Case studies, WhatsApp button, a blog in three languages, form endpoint if mailto shows friction | Backlog |
 
 ### Risk matrix
 
 | Risk | Likelihood | Impact | Mitigation |
 |---|---|---|---|
-| DNS or certificate delay on GitHub Pages | Medium | Low | Follow `DEPLOY.md`; certificates can take up to an hour; check CAA |
+| Deploy delay on GitHub Pages | Low | Low | Follow `DEPLOY.md`; a first deploy can take a few minutes |
 | Arabic copy reads stiff to native readers | Medium | Medium | Have a native reader review `ar.json` before launch; wording changes need no code |
 | Visitors without a mail client cannot send the brief | Medium | Medium | Copy button and visible address now; add WhatsApp or a form endpoint if data shows friction |
 | Placeholder claims left in (hourly costs, quote policy) | Medium | Medium | The list in `CREATIVE-BRIEF.md` §8 must be answered before launch |
-| Search visibility is slow on a new subdomain | High | Medium | Search Console and Bing on day one, backlinks from `werchti.tn` and profiles, steady content |
+| Search visibility is slow on a new site | High | Medium | Search Console and Bing on day one, backlinks from `werchti.tn` and profiles, steady content |
+| A `github.io` address looks less professional than an own domain | Medium | Low | Buy a domain later; change `url` in `src/site.json`, rebuild, push (see `DEPLOY.md`); GitHub redirects the old address |
 | Someone edits generated HTML by hand | Medium | Low | README warning; the CI rebuilds and overwrites |
 | GitHub Pages feature or limit changes | Low | Low | The `site/` folder is plain static files and can move to any host |
 
@@ -247,6 +248,6 @@ Never acceptable, even in an MVP: invented proof, third-party trackers, content 
 
 ## ▶️ Next steps
 
-1. **Run the deploy commands in `DEPLOY.md`** (the username `aziz-art` is already filled in): create the repository, push, set Pages to *GitHub Actions*, set the custom domain, add the OVH CNAME.
+1. **Deploy with the commands in `DEPLOY.md`**: organization `growdev-tn`, repository `growdev-tn.github.io`, Pages source *GitHub Actions*, no custom domain.
 2. **Answer the open questions** in `CREATIVE-BRIEF.md` §8 (founder spelling, case studies, WhatsApp number, quote policy, partner status) and have a native speaker read the Arabic page.
-3. **Right after DNS works:** add the site to Search Console and Bing, submit the sitemap, create the LinkedIn page and add its address to `sameAs` (`src/site.json`, which already lists `https://github.com/aziz-art`).
+3. **Right after the deploy works:** add the site to Search Console and Bing, submit the sitemap, create the LinkedIn page and add its address to `sameAs` (`src/site.json`, which already lists `https://github.com/aziz-art`).

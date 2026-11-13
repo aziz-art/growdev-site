@@ -1,10 +1,10 @@
 # GrowDev — full text
 
-Source: https://growdev.werchti.tn/ · Contact: contact@werchti.tn
+Source: https://growdev-tn.github.io/ · Contact: contact@werchti.tn
 
 # GrowDev in English (en)
 
-URL: https://growdev.werchti.tn/en/
+URL: https://growdev-tn.github.io/en/
 
 ## GrowDev | Odoo ERP, Websites and Mobile Apps in Tunisia
 
@@ -141,7 +141,7 @@ We train your team, set up backups and security, then keep following up: fixes, 
 
 # GrowDev en français (fr)
 
-URL: https://growdev.werchti.tn/
+URL: https://growdev-tn.github.io/
 
 ## GrowDev | Odoo, sites web et applications mobiles en Tunisie
 
@@ -278,7 +278,7 @@ Nous formons vos équipes, mettons en place les sauvegardes et la sécurité, pu
 
 # GrowDev بالعربية (ar)
 
-URL: https://growdev.werchti.tn/ar/
+URL: https://growdev-tn.github.io/ar/
 
 ## GrowDev | نظام Odoo ERP ومواقع الويب وتطبيقات الجوال في تونس
 

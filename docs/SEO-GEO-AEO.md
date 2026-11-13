@@ -50,11 +50,11 @@ Rules for editing the copy:
 ## 3. Launch checklist (in this order)
 
 1. **Deploy and check HTTPS** (see `docs/DEPLOY.md`). Open `/`, `/ar/`, `/en/`, `/sitemap.xml`, `/robots.txt`, `/llms.txt`.
-2. **Google Search Console.** Add a *Domain* property for `werchti.tn`. Google gives a TXT record; add it at OVH (DNS zone, TXT on the root). One record covers every subdomain. Then submit `https://growdev.werchti.tn/sitemap.xml` and use *URL inspection → Request indexing* for the three pages.
+2. **Google Search Console.** Add a *URL prefix* property for `https://growdev-tn.github.io/` (a *Domain* property needs a DNS record, which a `github.io` address cannot have). Verify with the *HTML file* method: put the file Google gives you in `site/`, push, then click Verify. Then submit `https://growdev-tn.github.io/sitemap.xml` and use *URL inspection → Request indexing* for the three pages. Details are in `docs/DEPLOY.md`.
 3. **Bing Webmaster Tools.** Import the site from Search Console, then submit the same sitemap. Bing's index also feeds Microsoft Copilot and some other assistants.
 4. **Validate the markup.** Run the three URLs through the Google Rich Results Test and validator.schema.org. Run PageSpeed Insights on mobile.
 5. **Google Business Profile.** Create a *Software company* profile (service-area business if there is no public address). Use the same name, email and website everywhere.
-6. **Entity links (`sameAs`).** `sameAs` already lists `https://github.com/aziz-art`. Create the LinkedIn company page (and a GitHub organisation if you want one) and add their URLs to `sameAs` in `src/site.json` (and a `sameAs` for the founder if he wants one). Rebuild. These links are the strongest signal that tells engines and AI tools "this is the same entity".
+6. **Entity links (`sameAs`).** `sameAs` already lists `https://github.com/aziz-art`. Create the LinkedIn company page, and consider adding the GitHub organisation `https://github.com/growdev-tn` (it already exists), then add their URLs to `sameAs` in `src/site.json` (and a `sameAs` for the founder if he wants one). Rebuild. These links are the strongest signal that tells engines and AI tools "this is the same entity".
 7. **Backlinks.** Link to the site from `werchti.tn`, from the founder's LinkedIn and GitHub profiles, and from directories where GrowDev qualifies (Sortlist, Clutch, GoAfricaOnline). Odoo.com's partner directory only if GrowDev is an official partner.
 8. **Share test.** Paste each URL into WhatsApp, LinkedIn and Facebook to see the language-specific share image.
 
@@ -68,12 +68,12 @@ Rules for editing the copy:
 
 ## 5. AI crawlers
 
-`robots.txt` allows everyone, and names the AI agents explicitly so the policy is visible:
+`robots.txt` is generated from `tools/seo.mjs` and `src/site.json`. It allows search engines and names the AI agents explicitly so the policy is visible:
 
 - **Search and live-answer agents** (allowed): OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot, Perplexity-User, Applebot, DuckAssistBot, MistralAI-User.
-- **Training crawlers** (allowed by default, so models can learn what GrowDev does): GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, CCBot.
+- **Training crawlers** (**blocked**, `"allowAiTraining": false` in `src/site.json`): GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, CCBot. Blocking `Google-Extended` does not affect Google Search.
 
-To opt out of training only, move the second list under `Disallow: /` in `AI_TRAINING` inside `tools/seo.mjs` and rebuild. Search visibility and live answers are not affected.
+To allow training instead, set `"allowAiTraining": true` in `src/site.json` and rebuild; the checker follows the setting. Search visibility and live answers are not affected either way. `robots.txt` is a request that reputable crawlers respect, not a lock.
 
 ## 6. What the checker enforces (`npm run check`)
 

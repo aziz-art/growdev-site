@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // GrowDev static build — zero dependencies (Node 18+).
 //   src/index.template.html + src/i18n/{fr,ar,en}.json  ->  site/index.html, site/ar/index.html, site/en/index.html
-//   plus runtime dictionaries, sitemap.xml, robots.txt, llms.txt and llms-full.txt.
+//   plus runtime dictionaries, sitemap.xml, robots.txt, llms.txt, llms-full.txt and (custom domains only) CNAME.
+//   The site address is the single "url" setting in src/site.json; everything above is derived from it.
 // Usage: node tools/build.mjs [--out DIR] [--index-links]
 //   --out DIR       copy site/ to DIR and write the generated files there (site/ stays untouched)
 //   --index-links   link to ".../index.html" instead of ".../" (for file:// previews and artifact hosts)
@@ -130,6 +131,12 @@ put("sitemap.xml", sitemap(cfg, LASTMOD));
 put("robots.txt", robots(cfg));
 put("llms.txt", llms(cfg, D));
 put("llms-full.txt", llmsFull(cfg, D));
+
+// CNAME is for custom domains only. A *.github.io address must not ship one; a custom domain must.
+// So moving to your own domain later is a one-line change of "url" in src/site.json.
+const HOST = new URL(cfg.url).hostname;
+if (HOST.endsWith(".github.io")) fs.rmSync(path.join(OUT, "CNAME"), { force: true });
+else put("CNAME", HOST);
 
 // keys that no template uses and that the runtime does not load are dead weight
 const { prefixes, exact } = cfg.runtimeKeys;

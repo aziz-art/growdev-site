@@ -1,5 +1,6 @@
 {
-  "url": "https://growdev.werchti.tn",
+  "url": "https://growdev-tn.github.io",
+  "allowAiTraining": false,
   "name": "GrowDev",
   "email": "contact@werchti.tn",
   "founder": "Aziz Chaibi",

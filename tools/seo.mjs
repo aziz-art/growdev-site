@@ -94,20 +94,26 @@ export function sitemap(cfg, lastmod) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join("\n")}\n</urlset>\n`;
 }
 
-// Crawlers that fetch pages for search or live answers (allowed) and for model training (also allowed by default).
-// To opt out of training only, move the "training" agents under "Disallow: /".
-const AI_SEARCH = ["OAI-SearchBot", "ChatGPT-User", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Applebot", "DuckAssistBot", "MistralAI-User"];
-const AI_TRAINING = ["GPTBot", "ClaudeBot", "Google-Extended", "Applebot-Extended", "CCBot"];
+// Crawlers that fetch pages for search or live answers (always allowed) and for model training.
+// Training crawlers follow "allowAiTraining" in src/site.json: false (the default here) blocks them, true allows them.
+// Blocking Google-Extended does not affect Google Search ranking.
+export const AI_SEARCH = ["OAI-SearchBot", "ChatGPT-User", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Applebot", "DuckAssistBot", "MistralAI-User"];
+export const AI_TRAINING = ["GPTBot", "ClaudeBot", "Google-Extended", "Applebot-Extended", "CCBot"];
 
 export function robots(cfg) {
-  const block = (agents) => agents.map((a) => `User-agent: ${a}`).join("\n") + "\nAllow: /\n";
+  const block = (agents, rule) => agents.map((a) => `User-agent: ${a}`).join("\n") + `\n${rule}\n`;
+  const train = cfg.allowAiTraining === true;
   return [
-    "# GrowDev — everyone is welcome, including search engines and AI assistants.",
+    train
+      ? "# GrowDev — everyone is welcome, including search engines and AI assistants."
+      : "# GrowDev — search engines and AI assistants that answer questions are welcome; model-training crawlers are not.",
     "User-agent: *\nAllow: /\n",
-    "# AI assistants that answer questions with live web results",
-    block(AI_SEARCH),
-    "# AI crawlers used for model training (allowed; move them under Disallow to opt out)",
-    block(AI_TRAINING),
+    "# AI assistants that answer questions with live web results (allowed)",
+    block(AI_SEARCH, "Allow: /"),
+    train
+      ? "# AI crawlers used for model training (allowed)"
+      : "# AI crawlers used for model training (blocked)",
+    block(AI_TRAINING, train ? "Allow: /" : "Disallow: /"),
     `Sitemap: ${cfg.url}/sitemap.xml`,
     ""
   ].join("\n");

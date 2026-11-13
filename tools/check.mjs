@@ -7,7 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
-import { FAQ_COUNT, SERVICES, pageUrl } from "./seo.mjs";
+import { FAQ_COUNT, SERVICES, pageUrl, AI_SEARCH, AI_TRAINING } from "./seo.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const siteArg = process.argv.indexOf("--site");
@@ -292,9 +292,32 @@ if (check(has("sitemap.xml"), "sitemap.xml is missing")) {
 if (check(has("robots.txt"), "robots.txt is missing")) {
   const r = read("robots.txt");
   check(r.includes(`Sitemap: ${origin}/sitemap.xml`), "robots.txt should point to the sitemap");
-  check(!/^Disallow:\s*\/\s*$/m.test(r), "robots.txt blocks the whole site");
-  for (const bot of ["OAI-SearchBot", "ChatGPT-User", "GPTBot", "Claude-SearchBot", "ClaudeBot", "PerplexityBot", "Google-Extended", "Applebot-Extended"]) {
-    check(new RegExp(`User-agent: ${bot}\\b`).test(r), `robots.txt has no explicit rule for ${bot}`, "warn");
+  // Read the file the way a crawler does: consecutive User-agent lines share the rules that follow them.
+  const groups = [];
+  let cur = null;
+  for (const raw of r.split(/\r?\n/)) {
+    const m = raw.replace(/#.*/, "").trim().match(/^([A-Za-z-]+)\s*:\s*(.*)$/);
+    if (!m) continue;
+    const key = m[1].toLowerCase(), val = m[2].trim();
+    if (key === "user-agent") {
+      if (!cur || cur.rules.length) { cur = { agents: [], rules: [] }; groups.push(cur); }
+      cur.agents.push(val.toLowerCase());
+    } else if ((key === "allow" || key === "disallow") && cur) cur.rules.push([key, val]);
+  }
+  const groupFor = (bot) => groups.find((g) => g.agents.includes(bot.toLowerCase())) || groups.find((g) => g.agents.includes("*"));
+  const blocked = (bot) => { const g = groupFor(bot); return !!g && g.rules.some(([k, v]) => k === "disallow" && v === "/"); };
+  const explicit = (bot) => groups.some((g) => g.agents.includes(bot.toLowerCase()));
+
+  check(!blocked("*"), "robots.txt blocks the whole site");
+  for (const bot of ["Googlebot", "Bingbot"]) check(!blocked(bot), `robots.txt blocks ${bot}, so the site could not appear in search`);
+  for (const bot of AI_SEARCH) {
+    check(explicit(bot), `robots.txt has no explicit rule for ${bot}`, "warn");
+    check(!blocked(bot), `robots.txt blocks ${bot}, an AI assistant that answers questions with live web results`);
+  }
+  const trainOk = cfg.allowAiTraining === true;
+  for (const bot of AI_TRAINING) {
+    check(explicit(bot), `robots.txt has no explicit rule for ${bot}`, "warn");
+    check(trainOk ? !blocked(bot) : blocked(bot), `robots.txt should ${trainOk ? "allow" : "block"} ${bot} ("allowAiTraining" is ${trainOk} in src/site.json)`);
   }
 }
 // llms.txt / llms-full.txt
@@ -311,7 +334,9 @@ if (check(has("llms.txt") && has("llms-full.txt"), "llms.txt and llms-full.txt a
   check(full.length > 8000, "llms-full.txt looks too short");
 }
 // GitHub Pages essentials
-check(has("CNAME") && read("CNAME").trim() === hostname, `CNAME should contain exactly ${hostname}`);
+check(new URL(origin).pathname === "/", `"url" in src/site.json must be the root of a host, without a path (got ${origin})`);
+if (hostname.endsWith(".github.io")) check(!has("CNAME"), `CNAME must not exist on a github.io address (it is only for custom domains); run the build to remove it`);
+else check(has("CNAME") && read("CNAME").trim() === hostname, `CNAME should contain exactly ${hostname}`);
 check(has(".nojekyll"), ".nojekyll is missing (GitHub Pages would run Jekyll)");
 check(has("favicon.ico") && has("assets/img/favicon.svg") && has("assets/img/apple-touch-icon.png"), "favicon.ico, favicon.svg or apple-touch-icon.png is missing");
 if (check(has("404.html"), "404.html is missing")) {
